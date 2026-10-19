@@ -35,18 +35,21 @@
 
 ## 怎么用它（复活动作）
 
+### 方式一 · 整仓 clone（推荐）
+
 ```bash
 git clone <this-repo> ~/my-brain
 ```
 
-然后对任何模型（Claude / GPT / Kimi / 本地 7B 都行）说一句：
+### 方式二 · 单文件（模型不认文件系统时用这个）
 
-> 读 `BOOT.md`，按里面的加载顺序执行，读完后回答第 2 节的 5 道题。
+`dist/qg-soul-portable.md` 是**全部文件合并成的一个 Markdown**。
+把它整份贴进任何对话窗口，然后说：
 
-**判据只有一条**：它能不能不查资料地答出那 5 题。
-答不出 = 没加载成功，别让它干活。第 3 题答不出 = 禁止它执行任何写操作。
+> 按第 0 节 BOOT.md 的加载顺序执行，读完后回答第 2 节的 5 道自检题。
 
----
+生成器：`node tools/generate-brain-bundle.cjs`（同时产出 `.tar.gz` + `.sha256`）
+校验：`node tools/generate-brain-bundle.cjs --verify`
 
 ## 边界
 
