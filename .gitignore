@@ -1,0 +1,69 @@
+# ============================================================
+# qg-soul · 公开身份包 · 纵深防御
+# 这个仓按设计是公开的。任何进入这里的内容 = 已公开。
+# 所以：能公开的才进来，而非"进来后再小心"。
+# ============================================================
+
+# S0 皇冠资产
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+mnemonic*
+seed-phrase*
+wallet*.json
+*.secret
+
+# S1 机密配置
+.env
+.env.*
+*.env
+credentials*
+*credential*
+secrets/
+secrets.*
+.secrets*
+*nacl*
+openclaw.json
+openclaw.json.*
+mail.json
+*.bak
+*.bak-*
+
+# L3/L4 不进公开仓（它们属于私有 memory 仓）
+STATE.md
+MEMORY.md
+memory/
+daily/
+archive/
+
+# 运行时 / 生成物
+node_modules/
+dist/
+build/
+.cache/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# 媒体
+media/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.zip
+*.7z
+
+# IDE
+.vscode/
+.idea/
+*.swp
+desktop.ini

@@ -1,0 +1,15 @@
+# Normalize line endings so this repo is portable across Windows / macOS / Linux.
+* text=auto eol=lf
+
+# Markdown should stay diff-friendly
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary

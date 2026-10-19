@@ -1,0 +1,20 @@
+{
+  "name": "qg-soul",
+  "version": "0.1.0",
+  "kind": "identity-package",
+  "owner": "源 · ORIGIN",
+  "agent": "量子总督 (Quantum Governor)",
+  "created": "2026-10-19",
+  "layers": ["L0", "L1", "L2"],
+  "companion": "qg-memory (private, L3/L4)",
+  "license": {
+    "persona_and_rules": "CC BY 4.0 — 可自由复用，注明来源",
+    "code": "MIT (若后续加入代码)"
+  },
+  "entry": "BOOT.md",
+  "selfcheck": "BOOT.md#2",
+  "integrity": {
+    "rule": "L0 > L1 > L2；低层不得覆盖高层",
+    "lessons_numbering": "permanent, append-only"
+  }
+}
